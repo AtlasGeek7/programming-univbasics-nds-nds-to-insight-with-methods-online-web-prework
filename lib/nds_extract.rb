@@ -9,7 +9,7 @@ def directors_totals(nds)
   result = {}
   i = 0
   len = nds.length
-  while i < len do
+  while i < len
     sum = gross_for_director(nds[i])
     result[nds[i][:name]] = sum
     i += 1
@@ -23,7 +23,7 @@ def gross_for_director(director_data)
     sum = 0
     j = 0
     len = director_data[:movies].length 
-    while j < len do
+    while j < len
       sum += director_data[:movies][j][:worldwide_gross]
       j += 1
     end
